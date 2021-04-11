@@ -4,7 +4,7 @@
 
     <label for="cocktail_select">Select A Cockatil:</label>
     <select id="cocktail_select" v-model="selectedCocktail">
-    <option disabled value="">select a cocktail</option>
+      <option disabled value="">select a cocktail</option>
       <option v-for="(cocktail, index) in cocktails" :key="index" :value="cocktail">{{cocktail.strDrink}}</option>
     </select>
 
@@ -52,10 +52,9 @@ export default {
 }
 
 
-
 </script>
 
-<style/>
+<style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -64,3 +63,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
   }
+
+<style/>
